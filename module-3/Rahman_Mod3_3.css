@@ -1,0 +1,54 @@
+/* Name: Aftabur Rahman
+    Date: January 21, 2026
+    Assignment: Assignment 3.3 CSS Styles
+*/
+
+h1 {
+    text-align: center;
+}
+
+#left-column, #right-column {
+    width: 45%;
+    float: left; /* Helps place them side-by-side */
+    margin: 2%;
+}
+
+h3 {
+    font-weight: 500;
+}
+
+ol, ul {
+    font-weight: 300;
+    padding: 10px;
+    list-style-position: inside; /* Ensures numbers/bullets are inside the border */
+}
+
+/* Ordered List Styling */
+.book-list {
+    border: 1px solid red;
+    border-radius: 15px;
+}
+
+/* Unordered List Styling */
+.learned-list {
+    border: 1px dashed red;
+    border-radius: 15px;
+    list-style-type: upper-roman; /* Changes bullets to Roman Numerals */
+}
+
+/* Bottom Navigation Styling */
+#footer-div {
+    width: 100%;
+    margin-top: 60%;
+    float: right;
+    margin-bottom: 20px;
+}
+
+.return-link {
+    text-decoration: none;
+    float: right;
+}
+
+.return-link:hover {
+    text-decoration: underline;
+}

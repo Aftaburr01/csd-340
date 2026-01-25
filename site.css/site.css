@@ -1,0 +1,30 @@
+/* Name: Aftabur Rahman
+    Date: January 24, 2026
+    Assignment: Module 3.3 – Landing Page Styles
+*/
+
+#container {
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+h1, h2, h3, h4 {
+    background-color: #4F3674; /* Deep Purple */
+    color: #FFFFFF;           /* White text for readability */
+    border: 1px solid #D6A800; /* Gold Border */
+    padding: 10px;
+}
+
+a {
+    color: #4F3674;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #D6A800;
+}
+
+a:visited {
+    color: #2b1d40; /* Darker shade for visited links */
+}
