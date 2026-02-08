@@ -1,0 +1,42 @@
+/* Styling for the main header */
+h1 {
+    text-align: center;
+    color: rgba(79, 54, 116, 1); /* Using your purple in RGBA */
+}
+
+/* Grid setup for the gallery */
+#image-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Creates 3 equal side-by-side columns */
+    margin-top: 10%;
+    gap: 20px; /* Optional spacing between items */
+}
+
+/* Centering and styling headers for items */
+h3 {
+    text-align: center;
+    font-weight: 500;
+    color: rgba(214, 168, 0, 1); /* Using your gold in RGBA */
+}
+
+/* Centering the images */
+figure {
+    text-align: center;
+}
+
+/* Styling the captions */
+figcaption {
+    font-style: italic;
+    font-size: 0.75em;
+    color: rgba(0, 0, 0, 0.8); /* Dark gray in RGBA */
+}
+
+/* Footer positioning consistent with 3.3 */
+#footer-div {
+    width: 100%;
+    margin-top: 50px;
+}
+
+.return-link {
+    float: right;
+}
