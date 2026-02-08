@@ -1,0 +1,84 @@
+/* Header Styles */
+header {
+    background-color: #0056b3; /* Trust Blue */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-weight: 400;
+}
+
+/* Navbar Styles */
+#navbar {
+    overflow: hidden;
+    background-color: #008b8b; /* Healing Teal */
+    border-bottom: 15px solid #ffc107; /* Alert Gold callback */
+}
+
+#navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#navbar a:hover {
+    background-color: #f8f9fa;
+    color: #333333;
+}
+
+/* Container and Card Styles */
+#container {
+    margin: 2% 5% 5% 5%;
+    padding: 10px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 50%;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+    text-align: center;
+    font-size: 2em;
+    color: #0056b3;
+    font-weight: 400;
+}
+
+.card-content {
+    padding: 2px 16px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #0056b3;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    color: white;
+    font-weight: 400;
+    float: right;
+    padding-right: 10px;
+    font-style: italic;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
