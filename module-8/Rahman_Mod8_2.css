@@ -1,0 +1,58 @@
+/* Card styles copied from Mod 6 */
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.card-title {
+    background-color: #003366;
+    color: white;
+    padding: 10px;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+/* Container Margin Shorthand: 2% top, 5% left/right, 100px bottom */
+#container {
+    margin: 2% 5% 100px 5%;
+}
+
+/* Table styling for #movies */
+#movies {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+#movies th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    border-bottom: 2px solid #ddd;
+}
+
+/* ADD THIS LINE HERE */
+#movies td {
+    border: 1px solid #ddd; /* This adds the visible borders to your rows */
+    padding: 8px;
+    vertical-align: top;
+}
+
+/* Fixed Footer styling */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: left;
+}
