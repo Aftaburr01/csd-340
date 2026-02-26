@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSD 340 Web Development with HTML and CSS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f9f9f9;
+        }
+        h1 {
+            color: #003366;
+        }
+        .story-container {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            max-width: 800px;
+        }
+        span {
+            font-weight: bold;
+            color: #d9534f; /* Red color to highlight the changed words */
+        }
+        .button-group {
+            margin-top: 20px;
+        }
+        button {
+            padding: 10px 15px;
+            margin-right: 10px;
+            cursor: pointer;
+            background-color: #003366;
+            color: white;
+            border: none;
+            border-radius: 4px;
+        }
+        button:hover {
+            background-color: #0055a4;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="story-container">
+        <h1>Assignment 9.3: JavaScript - Part 1</h1>
+
+        <p>
+            My journey into technology began after a significant chapter in my life. 
+            Right after high school, I joined the <span id="word1">__________</span> and 
+            dedicated eight years to serving my country. This experience 
+            taught me discipline and the value of hard work, which I now apply to my 
+            studies in software development.
+        </p>
+
+        <p>
+            Currently, my wife and I live in <span id="word2">__________</span>. 
+            When I am not coding or studying for my Bachelor's degree, you can usually 
+            find me outside. I am deeply passionate about working 
+            in my vegetable and flower garden, which provides a peaceful break from 
+            the digital world.
+        </p>
+
+        <p>
+            We also have a big goal for the future. We love to travel, having already 
+            visited 27 states and 12 countries. Our ultimate 
+            dream is to explore every single state park while traveling in an 
+            <span id="word3">__________</span>. This journey is 
+            something I look forward to sharing with my <span id="word4">__________</span> 
+            once my studies are complete.
+        </p>
+
+      <div class="button-group">
+    <button onclick="showWord('word1', serviceBranch)">Show Service</button>
+    <button onclick="showWord('word2', homeLocation)">Show Location</button>
+    <button onclick="showWord('word3', travelVehicle)">Show Vehicle</button>
+    <button onclick="showWord('word4', travelPartner)">Show Companion</button>
+      </div>
+
+    <script>
+        /* Declare four javascript variables holding the string inputs */
+        var serviceBranch = "US Army";
+        var homeLocation = "Kansas City, MO";
+        var travelVehicle = "RV";
+        var travelPartner = "wife";
+
+       /* REPLACE the old functions with this single one */
+    function showWord(spanId, wordValue) {
+        document.getElementById(spanId).innerHTML = wordValue;
+    }
+    </script>
+
+</body>
+</html>
