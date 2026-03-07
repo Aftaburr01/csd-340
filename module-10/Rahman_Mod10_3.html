@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSD 340 Web Development with HTML and CSS</title>
+    <style>
+        /* Basic styling to match the clean look of your previous modules */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 40px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            display: inline-block;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        .interactive-img {
+            width: 400px;
+            height: 300px;
+            border: 4px solid #2c3e50;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        .instructions {
+            margin-top: 15px;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+    </style>
+
+    <script>
+        /* Requirement: JavaScript function executed when an image is clicked */
+        function displayFavoriteAlert(category) {
+            alert("Success! You've discovered my favorite " + category + " spot.");
+        }
+    </script>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Assignment 10.3: JavaScript - Part 2</h1>
+
+        <br />
+        <div>
+            <a href="#">
+                <img name="travelImg" 
+                     src="rv_exterior.jpg" 
+                     alt="RV Exterior" 
+                     class="interactive-img"
+                     onmouseover="document.travelImg.src='rv_interior.jpg';"
+                     onmouseout="document.travelImg.src='rv_exterior.jpg';"
+                     onclick="displayFavoriteAlert('travel');">
+            </a>
+        </div>
+
+        <br />
+        <div class="instructions"
+             onmouseover="this.style.color='red';"
+             onmouseout="this.style.color='black';">
+            Run your mouse over the image to see inside our RV!
+            <br />
+            Click the image to reveal a secret traveler's tip.
+        </div>
+
+        <br /><br />
+
+        <div>
+            <a href="#">
+                <img name="gardenImg" 
+                     src="garden_winter.jpg" 
+                     alt="Winter Garden" 
+                     class="interactive-img"
+                     onmouseover="document.gardenImg.src='garden_summer.jpg';"
+                     onmouseout="document.gardenImg.src='garden_winter.jpg';"
+                     onclick="displayFavoriteAlert('gardening');">
+            </a>
+        </div>
+
+        <br />
+        <div class="instructions"
+             onmouseover="this.style.color='green';"
+             onmouseout="this.style.color='black';">
+            Hover to see the garden in full bloom!
+            <br />
+            Right-click and select "View Source" for the JS logic.
+        </div>
+    </div>
+
+</body>
+</html>
