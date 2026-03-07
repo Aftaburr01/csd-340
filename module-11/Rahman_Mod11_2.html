@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSD 340 Web Development with HTML and CSS</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; padding: 40px; background-color: #f9f9f9; }
+        .container { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); display: inline-block; min-width: 300px; }
+        input { padding: 8px; width: 200px; }
+        button { padding: 8px 15px; margin: 5px; cursor: pointer; background-color: #2c3e50; color: white; border: none; border-radius: 4px; }
+        button:hover { background-color: #34495e; }
+        #listDisplay { margin-top: 20px; text-align: left; padding: 0 20px; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Assignment 11.2: JavaScript - Part 3</h1>
+        
+        <p>Enter a task for your garden or next RV trip:</p>
+        <input type="text" id="taskInput" placeholder="Ex: Plant tomatoes">
+        <br><br>
+        
+        <button onclick="addTask()">Add</button>
+        <button onclick="deleteLastTask()">Delete Last Entry</button>
+        <button onclick="sortTasks()">Sort</button>
+
+        <div id="listDisplay">
+            <h3>My To-Do List:</h3>
+            <ol id="taskList"></ol>
+        </div>
+    </div>
+
+    <script>
+        // Array to store the tasks
+        var tasks = [];
+
+        // 1. Function to add an element to the array
+        function addTask() {
+            var input = document.getElementById("taskInput");
+            var taskValue = input.value;
+            
+            if (taskValue !== "") {
+                tasks.push(taskValue); // Adds to array
+                alert("Added: " + taskValue); // Alert popup
+                input.value = ""; // Clear text box
+                displayTasks(); // Update display
+            } else {
+                alert("Please enter a task.");
+            }
+        }
+
+        // 2. Function to delete the last element in the array
+        function deleteLastTask() {
+            if (tasks.length > 0) {
+                var deletedItem = tasks.pop(); // Removes last entry
+                alert("Deleted: " + deletedItem); // Alert popup
+                displayTasks(); // Update display
+            } else {
+                alert("The list is empty!");
+            }
+        }
+
+        // 3. Function to sort the array
+        function sortTasks() {
+            if (tasks.length > 1) {
+                tasks.sort(); // Sorts alphabetical
+                alert("The list has been sorted alphabetically."); // Alert popup
+                displayTasks(); // Update display
+            } else {
+                alert("Add more items to see them sort!");
+            }
+        }
+
+        // 4. Function to display the contents of the array
+        function displayTasks() {
+            var listHtml = "";
+            for (var i = 0; i < tasks.length; i++) {
+                listHtml += "<li>" + tasks[i] + "</li>";
+            }
+            document.getElementById("taskList").innerHTML = listHtml;
+        }
+    </script>
+</body>
+</html>
